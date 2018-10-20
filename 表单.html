@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>12</title>
+		<style type="text/css">
+			p{
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe src="//www.baidu.com"></iframe>
+	
+	<table border="1">
+		<tr>
+			<th>魏无羡</th>
+			<th>蓝忘机</th>
+			<!-- 文字会居中 -->
+		</tr>
+		<tr>
+			<td>刘邦</td>
+			<td>张良</td>
+		</tr>
+	</table>
+	<p align="left">(>w<)b嘿嘿</p>
+	<hr color="aqua" />
+	<!--表单-->
+	<!--abel 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。
+	如果您在 label 元素内点击文本，就会触发此控件。
+	就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。-->
+	<form action="index.html" method="post">
+		用户名：<input type="text" size="20" value="请输入"/>
+		密码：<input type="password" maxlength="8"/>
+		<br />
+		<!--同一类单选名字必须一样，不然都会被选上-->
+	<input type="radio" value="n1" name="r1"/>男
+	<input type="radio" value="n2" name="r1"/>女
+	<br />
+	个人爱好：<input type="checkbox" name="d1"/>文学<!--多选-->
+	<input type="checkbox" name="d1"/>体育
+	<input type="checkbox" name="d1"checked="checked"/>娱乐
+	<br />
+	
+	下拉列表选择，有三个选项   >
+	<select >
+		<!--size="3"可省略-->
+		<option style="display: none;">香蕉</option><!--不在下拉列表中显示-->
+		<option>橘子</option>
+		<option>桃</option>
+	</select>
+	<br />
+	
+	<textarea rows="10" cols="30">请输入您想输入的文字...</textarea>
+	<br />
+	<!--选择本地文件-->
+	<input type="file" />
+	<br />
+	<!--选择日期-->
+	<input type="date" />
+	<button type="button">点我</button>
+	<br />
+	<label for="name1">邮箱</label>
+	<input type="text" name="name1" id="name1"/>@
+	<select name="E-mail">
+		<option value="126.com">126.com</option>
+		<option value="369.com">369.com</option>
+	</select>
+	<br />
+		<input type="range" />
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重置"/><!--把之前输入的全部去掉-->
+	</form>
+	</body>
+</html>
