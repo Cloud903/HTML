@@ -30,6 +30,11 @@
 	如果您在 label 元素内点击文本，就会触发此控件。
 	就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。-->
 	<form action="index.html" method="post">
+		<!-- 该标签本身没有任何效果 主要是定义本身是一组表单。
+			action表示该表单提交到哪个页面
+			 method表示表单的请求方式：有 POST 和 GET 两种，默认 GET
+
+-->
 		用户名：<input type="text" size="20" value="请输入"/>
 		密码：<input type="password" maxlength="8"/>
 		<br />
@@ -42,7 +47,7 @@
 	<input type="checkbox" name="d1"checked="checked"/>娱乐
 	<br />
 	
-	下拉列表选择，有三个选项   >
+	<!-- 下拉列表选择，有三个选项   > -->
 	<select >
 		<!--size="3"可省略-->
 		<option style="display: none;">香蕉</option><!--不在下拉列表中显示-->
@@ -71,5 +76,15 @@
 		<input type="submit" value="提交"/>
 		<input type="reset" value="重置"/><!--把之前输入的全部去掉-->
 	</form>
+	<progress value="30" max="200"></progress>
+	<meter value="30" min="10" max="100" low="10" high="80"></meter>
+	<input type="color"> 
+	<!-- 解释：实现文本框获取颜色的功能，最新的现代浏览器测试后 IE 不支持，其余的都能 显示一个颜色对话框提供选择。 -->
+	<input type="image" src="白.jpg"> 
+	<!-- 生成一个图片按钮，点击图片就实现提交功能 -->
+ 		<input type="text" required>
+	<!-- 输入验证，必须填写一个值，不然无法提交 会显示请输入文字-->
+	<input type="number" min="10" max="100">
+	<!-- 长度限制验证 -->
 	</body>
 </html>
